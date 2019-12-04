@@ -7,7 +7,7 @@
 	],
 	"copy": {
 		"count": "EXTENSION_LOOP_COUNT",
-		"name": "winrmExtensionLoop"
+		"name": "wmiExporterExtensionLoop"
 	},
 	"properties": {
 		"mode": "Incremental",
