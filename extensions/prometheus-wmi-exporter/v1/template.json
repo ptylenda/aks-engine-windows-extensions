@@ -63,7 +63,7 @@
 			  ]
 		 },
 		 "protectedSettings": {
-			 "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./installPrometheusWmiExporter.ps1 -PackageParameters `\\'', parameters('extensionParameters'), '`\\'\"')]"
+			 "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./installPrometheusWmiExporter.ps1 -PackageParameters ', parameters('extensionParameters'), '\"')]"
 		 }
 	   }
 	 }
