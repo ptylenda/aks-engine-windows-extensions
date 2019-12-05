@@ -34,7 +34,7 @@
 			"type": "securestring",
 			"minLength": 0,
 			"metadata": {
-				"description": "Custom Parameter for Extension - not used in prometheus-docker-native-exporter extension at the moment"
+				"description": "Custom Parameter for Extension"
 			}
 		},
 		 "vmIndex": {
@@ -59,11 +59,11 @@
 		 "autoUpgradeMinorVersion": true,
 		 "settings": {
 			 "fileUris": [
-				 "[concat(parameters('artifactsLocation'), 'extensions/prometheus-docker-native-exporter/v1/enableDockerExporter.ps1')]"
+				 "[concat(parameters('artifactsLocation'), 'extensions/prometheus-wmi-and-docker-exporter/v1/installExporters.ps1')]"
 			  ]
 		 },
 		 "protectedSettings": {
-			 "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./enableDockerExporter.ps1 ', '\"')]"
+			 "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./installExporters.ps1 -PackageParameters ', parameters('extensionParameters'), '\"')]"
 		 }
 	   }
 	 }

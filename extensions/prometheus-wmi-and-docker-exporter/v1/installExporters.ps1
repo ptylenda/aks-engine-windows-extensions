@@ -8,3 +8,6 @@ if ((Get-Command "choco" -ErrorAction SilentlyContinue) -eq $null) {
 }
 
 choco install prometheus-wmi-exporter.install -y --force --params "`"$PackageParameters`""
+
+Set-Content -Value '{ "metrics-addr" : "0.0.0.0:9323", "experimental" : true }' -Path C:\ProgramData\docker\config\daemon.json
+Restart-Service Docker -Force
