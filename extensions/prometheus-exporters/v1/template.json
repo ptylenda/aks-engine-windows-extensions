@@ -59,7 +59,7 @@
 		 "autoUpgradeMinorVersion": true,
 		 "settings": {
 			 "fileUris": [
-				 "[concat(parameters('artifactsLocation'), 'extensions/prometheus-wmi-and-docker-exporter/v1/installExporters.ps1')]"
+				 "[concat(parameters('artifactsLocation'), 'extensions/prometheus-exporters/v1/installExporters.ps1')]"
 			  ]
 		 },
 		 "protectedSettings": {
